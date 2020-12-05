@@ -50,13 +50,12 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .avlod_navbar_fixed{
-  position:fixed;
+  position:absolute;
   top: 0;
   left:0;
   width:100%;
   right: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.7);
 }
 .avlod_navbar_number{
   font-style: normal;

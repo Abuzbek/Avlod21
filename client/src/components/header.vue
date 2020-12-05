@@ -5,12 +5,7 @@
         <b-row>
           <b-col cols="12" lg="8">
             <div class="avlod_header_title">
-              <h1>
-                <span>
-                  Biznesingizni  
-                </span>
-                 biz <br> bilan rivojlantiring
-              </h1>
+              <h1></h1>
               <p>
                 Kurslarimizda ta’lim oling va yetuk mutaxasis bo’ling!
               </p>
@@ -23,13 +18,27 @@
 </template>
 
 <script>
+import Typed from 'typed.js'
 export default {
   name: 'Header',
   props: {
   },
   data:()=>({
     // 
-  })
+  }),
+  mounted(){
+    var typed = new Typed('.avlod_header_title h1', {
+      strings: ['<span>Biznesingizni</span> biz <br> bilan rivojlantiring'],
+      typeSpeed: 30,
+      showCursor: false,
+      backDelay: 700,
+    });
+    console.log(typed);
+    setTimeout(()=>{
+      document.querySelector('.avlod_header_title h1 span').style.color = "#0163A6"
+    }, 2000)
+    
+  }
 }
 </script>
 
@@ -40,8 +49,8 @@ header{
   position:relative;
 }
 .avlod_header_title{
-  padding-top:200px;
-  padding-bottom:200px;
+  padding-top:25vh;
+  padding-bottom:25vh;
   position: relative;
   z-index: 2;
 }
@@ -59,9 +68,7 @@ header{
   font-weight: bold;
   font-size: 64px;
   line-height: 75px;
-}
-.avlod_header_title h1 span{
-color: #0163A6;
+  height: 150px;
 }
 .avlod_header_title p{
   font-style: normal;
@@ -69,7 +76,9 @@ color: #0163A6;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
-  margin: 50px 0;
+  margin-bottom: 50px;
+  margin-top: 50px;
+
 }
 .avlod_header_btn{
   padding:21px 46px;
@@ -77,16 +86,18 @@ color: #0163A6;
   font-size: 24px;
   line-height: 28px;
   background: #0163A6;
-  box-shadow: 0px 2px 4px 2px rgba(0, 69, 116, 0.25);
+  box-shadow: 0px 2px 4px 2px rgba(0, 69, 116, 0.5);
   border-radius: 2px;
   border: none !important;
 }
+.avlod_header_btn:focus{
+  box-shadow: 0px 2px 4px 2px rgba(0, 69, 116, 0.5) !important;
+}
 .avlod_header_btn:active{
-  background: rgba(1, 100, 166, 0.774) !important;
+  background: #0163A6 !important;
+  box-shadow: none !important;
   outline: none !important;
   border: none !important;
 }
-.avlod_header_btn:focus{
-  box-shadow: 0px 2px 4px 2px rgba(0, 69, 116, 0.25) !important;
-}
+
 </style>
