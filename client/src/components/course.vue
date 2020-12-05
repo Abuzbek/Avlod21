@@ -4,7 +4,7 @@
       Biznes maktab kurslarimizda nimalarni o’rganasiz?
     </h1>
     <b-container>
-        <b-row>
+        <b-row class="justify-content-center">
           <b-col v-for="(n, i) in cardOne" :name="i" :key="n._id"  cols="12" lg="4" md="6">
              <b-card class="avlod_card">
                   <h3>{{ n.heading }}</h3>

@@ -4,7 +4,7 @@
       <h3>
         Nega Avlod21 ni tanlashingiz kerak?
       </h3>
-      <div class="avlod_why_flex">
+      <div class="none_avlod avlod_why_flex">
         <div class="avlod_why_box">
           Biznes yuritish sirlarini <br> batafsil o’rgatiladi
         </div>
@@ -18,6 +18,17 @@
           Biznes yuritish sirlarini <br> batafsil o’rgatiladi
         </div>
       </div>
+      <div class="none_avlod avlod_why_knop">
+        <div class="avlod_why_btn">
+        </div>
+         <div class="avlod_why_btn">
+        </div>
+         <div class="avlod_why_btn">
+        </div>
+         <div class="avlod_why_btn">
+        </div>
+      </div>
+      <div class="flex_avlod_why">
       <div class="avlod_why_knop">
         <div class="avlod_why_btn">
         </div>
@@ -28,6 +39,22 @@
          <div class="avlod_why_btn">
         </div>
       </div>
+      <div class="avlod_why_flex">
+        <div class="avlod_why_box">
+          Biznes yuritish sirlarini batafsil o’rgatiladi
+        </div>
+        <div class="avlod_why_box">
+          Biznes yuritish sirlarini batafsil o’rgatiladi
+        </div>
+        <div class="avlod_why_box">
+          Biznes yuritish sirlarini batafsil o’rgatiladi
+        </div>
+        <div class="avlod_why_box">
+          Biznes yuritish sirlarini batafsil o’rgatiladi
+        </div>
+      </div>
+      </div>
+      
     </b-container>
  </section>
 </template>
@@ -146,6 +173,44 @@ color: #FFFFFF;
   }
   100%{
     transform: scale(1);
+  }
+}
+.flex_avlod_why{
+  display: none;
+}
+@media (max-width:991px) {
+  .none_avlod{
+    display: none;
+  }
+  .flex_avlod_why{
+    display: flex;
+  }
+  .flex_avlod_why .avlod_why_knop{
+    flex-direction: column;
+    width: 25%;
+    height: 255px;
+  }
+  .flex_avlod_why .avlod_why_flex{
+    flex-direction: column;
+    width: calc(100% - 25%);
+     align-items: flex-start;
+  }
+  .avlod_why_box{
+    text-align: left;
+    font-size: 24px;
+  }
+  .avlod_why_btn:first-child{
+    margin: 0;
+  }
+  .avlod_why_btn:last-child{
+    margin: 0;
+  }
+  .avlod_why_knop::after{
+    top: 0%;
+    transform: translateY(0%) translateX(-50%);
+    left: 50%;
+    width: 2px;
+    height: 100%;
   }
 }
 </style>

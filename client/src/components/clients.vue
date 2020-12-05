@@ -1,7 +1,7 @@
 <template>
   <section>
     <b-container>
-        <b-row>
+        <b-row class="justify-content-center">
           <b-col cols="12" lg="4" md="6">
              <b-card class="avlod_card">
                <img :src="require('../assets/comma.svg')" alt="">

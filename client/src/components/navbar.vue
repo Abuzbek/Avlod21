@@ -43,7 +43,20 @@ export default {
         title:'Kontaktlar'
       }
     ]
-  })
+  }),
+  mounted(){
+    document.querySelector('.navbar-toggler.collapsed').addEventListener('click', ()=>{
+      if(document.querySelector('.navbar-collapse.collapse').classList.contains('show')){
+        document.querySelector('.navbar-collapse.collapse').style.background = 'transparent'
+      }
+      else{
+        document.querySelector('.navbar-collapse.collapse').style.background = 'white'
+        document.querySelector('.navbar-collapse.collapse').style.padding = '15px'
+        document.querySelector('.navbar-collapse.collapse').style.borderRadius = '15px'
+      }
+    })
+    
+  }
 }
 </script>
 

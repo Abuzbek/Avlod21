@@ -5,7 +5,8 @@
         <b-row>
           <b-col cols="12" lg="8">
             <div class="avlod_header_title">
-              <h1></h1>
+              <h1 class="d_none_md"></h1>
+              <h2 class="d_block_md"><span>Biznesingizni</span> biz bilan rivojlantiring</h2>
               <p>
                 Kurslarimizda ta’lim oling va yetuk mutaxasis bo’ling!
               </p>
@@ -70,6 +71,9 @@ header{
   line-height: 75px;
   height: 150px;
 }
+.avlod_header_title h2 span{
+  color: #0163A6;
+}
 .avlod_header_title p{
   font-style: normal;
   font-weight: normal;
@@ -90,6 +94,7 @@ header{
   border-radius: 2px;
   border: none !important;
 }
+
 .avlod_header_btn:focus{
   box-shadow: 0px 2px 4px 2px rgba(0, 69, 116, 0.5) !important;
 }
@@ -99,5 +104,41 @@ header{
   outline: none !important;
   border: none !important;
 }
-
+.d_block_md{
+  display: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 75px;
+}
+@media (max-width:991px) {
+  .avlod_header_title h1{
+    height: auto;
+  }
+}
+@media (max-width:767px) {
+  .d_none_md{
+    display: none;
+  }
+  .d_block_md{
+    display: block;
+    font-size: 50px;
+  }
+  .avlod_header_title p {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+}
+@media (max-width:575px) {
+  header{
+    text-align: center;
+  }
+  .d_block_md{
+    display: block;
+    font-size: 40px;
+  }
+  .avlod_header_title p{
+    font-size: 20px;
+  }
+}
 </style>

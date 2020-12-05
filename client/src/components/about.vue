@@ -73,4 +73,23 @@ section{
   line-height: 27px;
   color: #000000;
 }
+@media (max-width:991px){
+  .avlod_about_right{
+    max-width: 100%;
+  }
+  .avlod_about_left img{
+    width: 100%;
+  }
+  section{
+    padding: 70px 0;
+  }
+}
+@media (max-width:575px){
+  .avlod_about_left::after{
+    left: -2%;
+    bottom: -4%;
+    width: 104%;
+    height: 108%;
+  }
+}
 </style>

@@ -7,6 +7,7 @@
     <Course/>
     <Clients/>
     <Contact/>
+    <Footer/>
   </div>
 </template>
 <script>
@@ -17,6 +18,8 @@ import Why from './components/why'
 import Course from './components/course.vue'
 import Clients from './components/clients.vue'
 import Contact from './components/contact.vue'
+import Footer from './components/footer.vue'
+
 
 
 export default {
@@ -28,7 +31,8 @@ export default {
     Why,
     Course,
     Clients,
-    Contact
+    Contact,
+    Footer
   }
 }
 </script>
