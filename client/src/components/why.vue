@@ -1,61 +1,16 @@
 <template>
  <section>
-    <b-container>
-      <h3>
-        Nega Avlod21 ni tanlashingiz kerak?
-      </h3>
-      <div class="none_avlod avlod_why_flex">
-        <div class="avlod_why_box">
-          Biznes yuritish sirlarini <br> batafsil o’rgatiladi
-        </div>
-        <div class="avlod_why_box">
-          Biznes yuritish sirlarini <br> batafsil o’rgatiladi
-        </div>
-        <div class="avlod_why_box">
-          Biznes yuritish sirlarini <br> batafsil o’rgatiladi
-        </div>
-        <div class="avlod_why_box">
-          Biznes yuritish sirlarini <br> batafsil o’rgatiladi
-        </div>
-      </div>
-      <div class="none_avlod avlod_why_knop">
-        <div class="avlod_why_btn">
-        </div>
-         <div class="avlod_why_btn">
-        </div>
-         <div class="avlod_why_btn">
-        </div>
-         <div class="avlod_why_btn">
-        </div>
-      </div>
-      <div class="flex_avlod_why">
-      <div class="avlod_why_knop">
-        <div class="avlod_why_btn">
-        </div>
-         <div class="avlod_why_btn">
-        </div>
-         <div class="avlod_why_btn">
-        </div>
-         <div class="avlod_why_btn">
-        </div>
-      </div>
-      <div class="avlod_why_flex">
-        <div class="avlod_why_box">
-          Biznes yuritish sirlarini batafsil o’rgatiladi
-        </div>
-        <div class="avlod_why_box">
-          Biznes yuritish sirlarini batafsil o’rgatiladi
-        </div>
-        <div class="avlod_why_box">
-          Biznes yuritish sirlarini batafsil o’rgatiladi
-        </div>
-        <div class="avlod_why_box">
-          Biznes yuritish sirlarini batafsil o’rgatiladi
-        </div>
-      </div>
-      </div>
-      
-    </b-container>
+   <div class="btn_glass">
+     <div @click="hide = !hide" class="btn_outline">
+     <div class="btn_outline-gray">
+       <div class="btn_outline-white">
+         <svg width="47" height="52" viewBox="0 0 47 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M44.1361 29.9975L7.16427 51.1722C4.02663 52.9674 0 50.7937 0 47.1747V4.82532C0 1.21209 4.02082 -0.967325 7.16427 0.833557L44.1361 22.0083C44.8498 22.4104 45.4431 22.9918 45.8558 23.6933C46.2684 24.3949 46.4858 25.1917 46.4858 26.0029C46.4858 26.8141 46.2684 27.6109 45.8558 28.3125C45.4431 29.014 44.8498 29.5953 44.1361 29.9975Z" fill="#0561A6"/>
+        </svg>
+       </div>
+     </div>
+   <!-- </div v-show="hide">Hello</div> -->
+   <img src="../assets/video.jpg" alt="">
  </section>
 </template>
 
@@ -64,17 +19,84 @@ export default {
   name: 'Why',
   props: {
   },
-  data:()=>({
-    // 
-  })
+  data(){
+    return{
+      hide: false
+    }
+  }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 section{
-  padding: 100px 0 120px;
+  height: 100vh;
   background: #0163A6;
+  position: relative;
+}
+section img{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.btn_glass{
+  width:400px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: radial-gradient(50% 50% at 50% 50%, rgba(5, 97, 166, 0.6) 0%, rgba(196, 196, 196, 0.5) 100%);
+  z-index: 2;
+  border-radius: 50%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn_outline:hover .btn_outline-white{
+  width: 170px;
+  height: 170px;
+}
+.btn_outline:hover svg{
+  transform: scale(1.2);
+}
+.btn_outline svg{
+  transition-delay: 0.3s;
+  transition-duration: .5s;
+}
+.btn_outline{
+  width:210px;
+  height: 210px;
+  border-radius: 50%;
+  z-index: 2;
+  border: 3px solid #EBEFEE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.btn_outline-gray{
+  width: 170px;
+  height: 170px;
+  background: #EBEFEE;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn_outline-white{
+  width: 130px;
+  height: 130px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: ease-in-out 0.4s all;
 }
 h3{
   font-style: normal;
@@ -84,133 +106,5 @@ h3{
   color: #FFFFFF;
   text-align: center;
   margin-bottom: 50px;
-}
-.avlod_why_flex{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.avlod_why_box{
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 21px;
-text-align: center;
-color: #FFFFFF;
-}
-.avlod_why_knop{
-  width: 86%;
-  margin: auto;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 6px;
-  margin-top: 20px;
-}
-.avlod_why_btn{
-  width: 30px;
-  height: 30px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #0163A6;
-  z-index: 4;
-}
-.avlod_why_btn::after{
-  content: '';
-  display: block;
-  width: 18px;
-  height: 18px;
-  background: #fff;
-  border-radius: 50%;
-  animation:strokeBtnAfter 3s linear infinite;
-}
-.avlod_why_btn::before{
-  content: '';
-  display: block;
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  animation:strokeBtn 3s linear infinite;
-}
-.avlod_why_btn:first-child{
-  margin-left: -6px;
-}
-.avlod_why_btn:last-child{
-  margin-right: -18px;
-}
-.avlod_why_knop::after{
-  content:'';
-  display: block;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  height: 2px;
-  background: #FFFFFF;
-}
-@keyframes strokeBtn {
-  0%{
-    transform: scale(0);
-  }
-  50%{
-    transform: scale(1);
-  }
-  100%{
-    transform: scale(0);
-  }
-}
-@keyframes strokeBtnAfter {
-  0%{
-    transform: scale(1);
-  }
-  50%{
-    transform: scale(0.7);
-  }
-  100%{
-    transform: scale(1);
-  }
-}
-.flex_avlod_why{
-  display: none;
-}
-@media (max-width:991px) {
-  .none_avlod{
-    display: none;
-  }
-  .flex_avlod_why{
-    display: flex;
-  }
-  .flex_avlod_why .avlod_why_knop{
-    flex-direction: column;
-    width: 25%;
-    height: 255px;
-  }
-  .flex_avlod_why .avlod_why_flex{
-    flex-direction: column;
-    width: calc(100% - 25%);
-     align-items: flex-start;
-  }
-  .avlod_why_box{
-    text-align: left;
-    font-size: 24px;
-  }
-  .avlod_why_btn:first-child{
-    margin: 0;
-  }
-  .avlod_why_btn:last-child{
-    margin: 0;
-  }
-  .avlod_why_knop::after{
-    top: 0%;
-    transform: translateY(0%) translateX(-50%);
-    left: 50%;
-    width: 2px;
-    height: 100%;
-  }
 }
 </style>

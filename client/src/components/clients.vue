@@ -1,39 +1,17 @@
 <template>
   <section>
+    <overlay></overlay>
     <b-container>
+      <h1>Tadbirkorlar bilan suhbatlar</h1>
         <b-row class="justify-content-center">
           <b-col cols="12" lg="4" md="6">
-             <b-card class="avlod_card">
-               <img :src="require('../assets/comma.svg')" alt="">
-               <p>
-                 Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam dolor sit amet, consectetur adipiscing
-               </p>
-               <h2>
-                 Sardor Abduganiyev
-               </h2>
-             </b-card>
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/rMCyHmEsK5Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </b-col>
           <b-col cols="12" lg="4" md="6">
-             <b-card class="avlod_card">
-               <img :src="require('../assets/comma.svg')" alt="">
-               <p>
-                 Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam dolor sit amet, consectetur adipiscing
-               </p>
-               <h2>
-                 Sardor Abduganiyev
-               </h2>
-             </b-card>
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/e8gFfMGh7s8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </b-col>
           <b-col cols="12" lg="4" md="6">
-             <b-card class="avlod_card">
-               <img :src="require('../assets/comma.svg')" alt="">
-               <p>
-                 Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam dolor sit amet, consectetur adipiscing
-               </p>
-               <h2>
-                 Sardor Abduganiyev
-               </h2>
-             </b-card>
+             <iframe width="100%" height="300" src="https://www.youtube.com/embed/r8EyK13jQN0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </b-col>
         </b-row>
     </b-container>
@@ -53,8 +31,32 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+section h1{
+  text-align:center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #ffffff;
+  margin-bottom: 80px;
+  position: relative;
+z-index: 100;
+}
 section{
+  position: relative;
   padding: 30px 0 140px 0;
+  background: url('https://img.wallpapersafari.com/desktop/1920/1080/61/22/x17Gcy.png') no-repeat center center / cover;
+  background-attachment: fixed;
+}
+section overlay{
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* backdrop-filter: blur(1px); */
+  background-color: rgba(0, 62, 112, 0.3);
 }
 .avlod_card{
   border: none !important;

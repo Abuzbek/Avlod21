@@ -2,31 +2,8 @@
   <section>
     <b-container fluid>
       <b-row>
-         <b-col class="p-0" cols="12" lg="6">
-           
-           <b-card class="avlod_contact_card">
-             <div
-             class="avlod-card_in"
-             >
-                <h3>Savollaringizga quyidagi forma  orqali tezkor javob oling!</h3>
-              <b-form-input class="avlod_contact_input"  v-model="name" placeholder="Ismingiz"></b-form-input>
-              <b-form-input class="avlod_contact_input" v-model="number" placeholder="Telefon"></b-form-input>
-              <b-form-textarea
-                id="textarea-no-resize"
-                placeholder="Savollaringiz"
-                rows="3"
-                class="avlod_contact_input text_area"
-                no-resize
-              ></b-form-textarea>
-              <div class="d-flex justify-content-center align-items-center">
-              <b-button v-ripple class="avlod_header_btn">Yuborish</b-button>
-              </div>
-             </div>
-             <div class="avlod_contact_overlay"></div>
-           </b-card>
-        </b-col>
-        <b-col class="p-0" cols="12" lg="6">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11982.58843740213!2d69.2104013862915!3d41.33828640280658!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7b28c283edeb9cd4!2sAvlod21!5e0!3m2!1sru!2s!4v1607070478935!5m2!1sru!2s" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <b-col class="p-0" cols="12" >
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11982.58843740213!2d69.2104013862915!3d41.33828640280658!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7b28c283edeb9cd4!2sAvlod21!5e0!3m2!1sru!2s!4v1607070478935!5m2!1sru!2s" width="100%" height="450px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </b-col>
       </b-row>
     </b-container> 
@@ -48,13 +25,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.avlod_contact_card{
-  padding: 60px 0;
-  background: url('../assets/contact.jpg') fixed no-repeat center center / cover;
-  width: 100%;
-  height: 100%;
-  border-radius: 0px;
-}
 .avlod-card_in{
   max-width: 445px;
   margin: 0 auto;

@@ -35,7 +35,7 @@
           </b-col>
         </b-row>
         <div class="d-flex justify-content-center align-items-center w-100">
-          <b-button v-ripple class="avlod_header_btn">Kursga yozilish</b-button>
+          <b-button v-ripple class="avlod_header_btn"><a href="https://t.me/avlod21_bot">Kursga yozilish</a></b-button>
         </div>
     </b-container>
   </section>
@@ -134,6 +134,10 @@ section h1{
   box-shadow: 0px 2px 4px 2px rgba(0, 69, 116, 0.5);
   border-radius: 2px;
   border: none !important;
+}
+.avlod_header_btn a{
+  color: #fff;
+  text-decoration: none !important;
 }
 .avlod_header_btn:focus{
   box-shadow: 0px 2px 4px 2px rgba(0, 69, 116, 0.5) !important;

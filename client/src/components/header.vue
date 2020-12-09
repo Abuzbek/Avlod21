@@ -10,7 +10,7 @@
               <p>
                 Kurslarimizda ta’lim oling va yetuk mutaxasis bo’ling!
               </p>
-              <b-button v-ripple class="avlod_header_btn">Kursga yozilish</b-button>
+              <b-button v-ripple class="avlod_header_btn"><a href="https://t.me/avlod21_bot">Kursga yozilish</a></b-button>
             </div>
           </b-col>
         </b-row>
@@ -94,7 +94,10 @@ header{
   border-radius: 2px;
   border: none !important;
 }
-
+.avlod_header_btn a{
+  color: #fff;
+  text-decoration: none !important;
+}
 .avlod_header_btn:focus{
   box-shadow: 0px 2px 4px 2px rgba(0, 69, 116, 0.5) !important;
 }

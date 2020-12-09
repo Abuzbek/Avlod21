@@ -14,7 +14,7 @@
                 Avlod 21 - biznes akademiyasi 
               </h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis
+                "Avlod21" biznes maktabi siz yopildi, deb o'ylagan eshikni ochib beradi. Hali ham menejer, marketolog, biznesni tizimlashtirish kabi moliya sohada mutaxassis bo'lishga kech qolmadingiz, qaddi baland xodim bo'lishning ayni vaqti keldi.
               </p>
             </div>
           </b-col>
