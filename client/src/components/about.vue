@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="about">
     <div class="avlod_header_overlay"></div>
     <b-container>
         <b-row>
@@ -14,7 +14,7 @@
                 Avlod 21 - biznes akademiyasi 
               </h3>
               <p>
-                "Avlod21" biznes maktabi siz yopildi, deb o'ylagan eshikni ochib beradi. Hali ham menejer, marketolog, biznesni tizimlashtirish kabi moliya sohada mutaxassis bo'lishga kech qolmadingiz, qaddi baland xodim bo'lishning ayni vaqti keldi.
+                "Avlod21" biznes maktabi biznesingiz uchun kerakli mutaxasislarni tayyorlab beradi. Hali ham menejer, marketolog, biznesni tizimlashtirish kabi moliya sohada mutaxassis bo'lishga kech qolmadingiz, qaddi baland xodim bo'lishning ayni vaqti keldi.
               </p>
             </div>
           </b-col>
@@ -61,16 +61,16 @@ section{
 .avlod_about_right h1{
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 32px;
+  line-height: 130%;
   color: #000000;
 }
 .avlod_about_right p{
   margin-top: 30px;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 24px;
+  line-height: 150%;
   color: #000000;
 }
 @media (max-width:991px){

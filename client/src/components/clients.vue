@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="meetup">
     <overlay></overlay>
     <b-container>
       <h1>Tadbirkorlar bilan suhbatlar</h1>

@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="contact">
     <b-container fluid>
       <b-row>
         <b-col class="p-0" cols="12" >

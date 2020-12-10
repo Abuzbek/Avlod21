@@ -3,17 +3,18 @@
     <div>
   <b-navbar class="avlod_navbar_fixed" toggleable="lg" type="light">
     <b-container>
-      <b-navbar-brand href="#">
+      <b-navbar-brand href="#header">
         <img src="../assets/logo.png" alt="">
       </b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item href="#" class="avlod_navbar_title" v-for="n in navbarItem" :key="n.title" >{{ n.title }}</b-nav-item>
+          <b-nav-item :href="n.href" class="avlod_navbar_title" v-for="n in navbarItem" :key="n.title" >{{ n.title }}</b-nav-item>
         </b-navbar-nav>
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
-          <a href="tel:+" class="avlod_navbar_number"> +998 99 012 56 76</a>
+          <a href="tel:+998 55 500 21 00" class="avlod_navbar_number">
+              +998 55 500 21 00</a>
         </b-navbar-nav>
       </b-collapse>
     </b-container>
@@ -31,16 +32,20 @@ export default {
   data:()=>({
     navbarItem:[
       {
-        title:'Biz haqimizda'
+        title:'Biz haqimizda',
+        href:'#about'
       },
       {
-        title:'Biznes maktab'
+        title:'Biznes maktab',
+        href:'#school'
       },
       {
-        title:'Sharhlar'
+        title:'Suhbatlar',
+        href:'#meetup'
       },
       {
-        title:'Kontaktlar'
+        title:'Aloqa',
+        href:'#contact'
       }
     ]
   }),

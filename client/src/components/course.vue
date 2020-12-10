@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="school">
     <h1>
       Biznes maktab kurslarimizda nimalarni o’rganasiz?
     </h1>
@@ -11,23 +11,17 @@
                   <h4>{{ n.title }}</h4>
                   <ul>
                     <li>{{ n.text1 }}</li>
-                    <li>{{ n.text2 }}</li>
-                    <li>{{ n.text3 }}</li>
-                    <li>{{ n.text4 }}</li>
                   </ul>
              </b-card>
           </b-col>
           <b-col cols="12" lg="8" class="m-auto">
-            <b-row>
+            <b-row class="justify-content-center">
               <b-col v-for="(n, i) in cardTwo" :name="i" :key="n._id" cols="12" md="6" >
                 <b-card class="avlod_card">
                   <h3>{{ n.heading }}</h3>
                   <h4>{{ n.title }}</h4>
                   <ul>
                     <li>{{ n.text1 }}</li>
-                    <li>{{ n.text2 }}</li>
-                    <li>{{ n.text3 }}</li>
-                    <li>{{ n.text4 }}</li>
                   </ul>
                 </b-card>
               </b-col>
@@ -104,6 +98,28 @@ section h1{
   width: 60px;
   height: 64px;
 }
+.avlod_card .card-body{
+  height: 190px;
+  overflow: auto;
+  margin-right: 10px;
+}
+.avlod_card .card-body:hover{
+  margin-right: 0px;
+}
+.avlod_card .card-body::-webkit-scrollbar {
+  width: 0px;
+}
+.avlod_card .card-body:hover::-webkit-scrollbar {
+  width: 10px;
+}
+.avlod_card .card-body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+.avlod_card .card-body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 10em;
+}
 .avlod_card h4{
   font-style: normal;
   font-weight: 500;
@@ -112,6 +128,7 @@ section h1{
   color: #000000;
   text-align:center;
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 .avlod_card ul{
   padding: 0px !important;

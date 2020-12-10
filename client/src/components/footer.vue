@@ -22,11 +22,12 @@
             <h3>
               Telefon
             </h3>
-            <a href="#!">
-              +998 99 999 99 99
+            <a href="tel:+998 55 500 21 00">
+              +998 55 500 21 00
             </a>
             <div class="avlod_social_footer_icon">
-              <svg
+              <a href="http://t.me/avlod21">
+                <svg
                 width="24"
                 height="20"
                 viewBox="0 0 24 20"
@@ -38,6 +39,8 @@
                   fill="white"
                 />
               </svg>
+              </a>
+              <a href="https://tinyurl.com/Avlod21-Facebook">
               <svg
                 width="13"
                 height="24"
@@ -50,6 +53,8 @@
                   fill="white"
                 />
               </svg>
+              </a>
+              <a href="https://tinyurl.com/Avlod21-instagram">
               <svg
                 width="24"
                 height="24"
@@ -70,6 +75,7 @@
                   fill="white"
                 />
               </svg>
+              </a>
             </div>
           </div>
         </b-col>
@@ -79,7 +85,7 @@
               Manzil
             </h3>
             <p>
-              Shakirkhan Abzalov ko’chasi
+              Shayhontohur tumani, Maxtumquli ko'chasi
               <br />
               Mo’ljal: Beruniy metrosi
             </p>

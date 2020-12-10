@@ -6,49 +6,28 @@ export default {
           {
             _id: '12322342112',
             heading:'01',
-            title:'Marketing',
-            text1:'- Lorem ipsum dolor sit amet',
-            text2:'- Lorem ipsum dolor sit amet',
-            text3:'- Lorem ipsum dolor sit amet',
-            text4:'- Lorem ipsum dolor sit amet'
+            title:'Biznesni tizimlashtirish',
+            text1:'- Asosiy vazifa noaniqlikni kamaytirish va shu sababli xatarlarni minimallashtirish'
           },
           {
             _id: '1sdada23434',
             heading:'02',
-            title:'Marketing',
-            text1:'- Lorem ipsum dolor sit amet',
-            text2:'- Lorem ipsum dolor sit amet',
-            text3:'- Lorem ipsum dolor sit amet',
-            text4:'- Lorem ipsum dolor sit amet'
+            title:'Sotuvni boshqarish',
+            text1:`- Sotuvchilarni ko'pchilik xodimlarga nisbatan boshqarish qiyinroq. Qiyin, ammo imkonsiz emas. Sotishning samarali boshqaruvi boshqa bo'limlarda boshqaruvdan biroz boshqacha yondashuvni talab qiladi. Sotish texnikasining o'z qoidalari mavjud. Ushbu qoidalarga amal qilinsa sotuv jarayonida muammo bo'lmaydi.`
           },
           {
             _id: '12234232112',
             heading:'03',
-            title:'Marketing',
-            text1:'- Lorem ipsum dolor sit amet',
-            text2:'- Lorem ipsum dolor sit amet',
-            text3:'- Lorem ipsum dolor sit amet',
-            text4:'- Lorem ipsum dolor sit amet'
+            title:'HR',
+            text1:`- HR menejeri-kompaniyaning kadrlar bo'limini boshqaradigan shaxs.`
           }
         ],
         cardTwo :[
           {
             heading:'04',
             _id: '324sdf4245',
-            title:'Marketing',
-            text1:'- Lorem ipsum dolor sit amet',
-            text2:'- Lorem ipsum dolor sit amet',
-            text3:'- Lorem ipsum dolor sit amet',
-            text4:'- Lorem ipsum dolor sit amet'
-          },
-          {
-            heading:'05',
-            _id: '324sdfw54',
-            title:'Marketing',
-            text1:'- Lorem ipsum dolor sit amet',
-            text2:'- Lorem ipsum dolor sit amet',
-            text3:'- Lorem ipsum dolor sit amet',
-            text4:'- Lorem ipsum dolor sit amet'
+            title:"Biznes asoslarini o'rganish",
+            text1:` - Yakka tartibdagi tadbirkor har doim ham o'z biznesini daromad keltiradigan tarzda qurishga qodir emas. Ba'zida yakka tartibdagi tadbirkorlarning ommaviy tugatilishining sababi tadbirkorlikning ushbu sohasini nazorat qiluvchi qonunlarning o'zgarishi hisoblanadi.`
           }
         ]
       }
