@@ -11,7 +11,7 @@
      </div>
      </div>
    </div>
-   <div v-show="hide" class="video">
+   <div v-if="hide" class="video">
      <iframe src="https://player.vimeo.com/video/489291445" width="100%" height="500" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
      <div @click="hide = !hide" class="video_box">x</div>
    </div>
